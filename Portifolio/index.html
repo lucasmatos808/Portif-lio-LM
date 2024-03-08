@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Poppins:wght@200&display=swap"
+rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="imagex/png" href="logo.png">
+<title>Portfolio LM</title>
+</head>
+<body>
+    <header> 
+        
+        <div class="container">  
+        <nav class="flex items-centre justify-between"> 
+            <div class="logo">  
+                <img src="logo.png" width="60px" alt="logo">  
+                </div>  
+            <div class="left flex-1 justfiy-right">  
+                   
+        <div>  
+                <a href="#">Home</a>  
+                <a href="#">About</a>  
+                <a href="#">Certifications</a>  
+                <a href="#">More</a>  
+        </div>  
+            </div>  
+            <div class="right">  
+
+                <button class="btn btn-primary">Contact</button>  
+            </div>  
+        </nav>
+        </div>  
+        <div class="profile flex items-centre justify-center">
+            <img src="profile4.png" alt="" width="500" height="600" aling="center">
+            <div class="left flex justify-center">
+        
+            </div>
+
+            <div class="right center " >
+            <h6>Lucas Eduardo da Silva Matos</h6>
+            <p>"A arte de programar consiste na arte de organizar e dominar a complexidade."
+    
+<br> - Dijkstra 
+            </p>
+            <div>
+            <button class="btn btn-secondary" onclick="downloadFile()">   Baixar o CV </button>
+            <script>
+                function downloadFile() {
+                    // URL do arquivo que você quer fazer o download
+                    var fileUrl = "Lucas Eduardo da Silva Matos.pdf";
+                
+                    // Crie um elemento 'a' para simular o clique e baixar o arquivo
+                    var link = document.createElement('a');
+                    link.href = fileUrl;
+                
+                    // Adicione o atributo 'download' para forçar o download do arquivo
+                    link.download = 'Lucas Eduardo da Silva Matos.pdf';
+                
+                    // Acrescente o link ao corpo do documento HTML e simule um clique
+                    document.body.appendChild(link);
+                    link.click();
+                
+                    // Remova o link do corpo do documento HTML após o download
+                    document.body.removeChild(link);
+                }
+                </script>
+                
+            </div>
+            </div>
+            </div>
+        </header>
+
+</body>
+</html>
